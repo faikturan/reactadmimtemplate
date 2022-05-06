@@ -1,0 +1,72 @@
+@import "variables";
+
+@include generateTRBL("margin", 0, 1, 2);
+@include generateTRBL("padding", 0, 1, 2);
+
+html, body {
+    margin: 0;
+}
+
+* {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.starting {
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.markdown-body {
+    color: inherit;
+}
+
+.screen-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-xs {
+    font-size: 0.5em;
+}
+
+.font-sm {
+    font-size: 0.75em;
+}
+
+.font-lg {
+    font-size: 1.25em;
+}
+
+.font-xl {
+    font-size: 1.5em;
+}
+
+.dark {
+    .markdown-body {
+        pre {
+            background-color: #424242;
+        }
+    }
+}
